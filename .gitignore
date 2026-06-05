@@ -1,0 +1,11 @@
+# File yang tidak perlu diupload ke GitHub/Vercel
+node_modules
+dist
+.env
+.env.local
+server/node_modules
+server/uploads/*.jpg
+server/uploads/*.png
+server/uploads/*.gif
+server/uploads/*.mp4
+server/uploads/*.pdf
