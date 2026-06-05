@@ -1,0 +1,64 @@
+[
+  {
+    "id": 1780656368900,
+    "name": "PATOKAN HARGA SERVICE",
+    "type": "groups",
+    "avatar": "P",
+    "lastMessage": "Grup baru telah dibuat",
+    "time": "17.46",
+    "unread": 0,
+    "adminId": "me",
+    "members": [
+      {
+        "id": "me",
+        "name": "Anda (Admin)",
+        "role": "admin"
+      }
+    ],
+    "topics": [
+      {
+        "id": "t_1780656385883",
+        "name": "HARGA SERVICE",
+        "avatarUrl": "",
+        "messages": []
+      },
+      {
+        "id": "t_1780656392307",
+        "name": "HARGA BARANG DAN PART",
+        "avatarUrl": "",
+        "messages": []
+      },
+      {
+        "id": "t_1780656399979",
+        "name": "HOME SERVICE & SPK",
+        "avatarUrl": "",
+        "messages": []
+      }
+    ]
+  },
+  {
+    "id": 1780656229755,
+    "name": "PKL JSKM 2026",
+    "type": "groups",
+    "avatar": "P",
+    "lastMessage": "Grup baru telah dibuat",
+    "time": "17.43",
+    "unread": 0,
+    "adminId": "me",
+    "members": [
+      {
+        "id": "me",
+        "name": "Anda (Admin)",
+        "role": "admin"
+      }
+    ],
+    "topics": [
+      {
+        "id": "t_1780656330715",
+        "name": "ABSENSI",
+        "avatarUrl": "",
+        "messages": []
+      }
+    ]
+  }
+]

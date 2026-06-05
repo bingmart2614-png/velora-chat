@@ -1,0 +1,285 @@
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+  color: var(--text-primary);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  background-color: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Main Step */
+.login-logo-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.logo-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 25px rgba(0, 210, 106, 0.3);
+  background: linear-gradient(135deg, #00d26a 0%, #00a854 100%);
+}
+
+.login-title {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+}
+
+.login-subtitle {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.login-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.btn-google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  padding: 14px;
+  background-color: white;
+  color: #1f2937;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.btn-google:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255,255,255,0.1);
+}
+
+.btn-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  padding: 14px;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-phone:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.login-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  margin: 8px 0;
+}
+
+.login-divider::before,
+.login-divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.login-divider span {
+  padding: 0 16px;
+}
+
+.login-terms {
+  margin-top: 32px;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Phone & OTP Steps */
+.back-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  margin-bottom: 24px;
+  padding: 0;
+  transition: color var(--transition-fast);
+}
+
+.back-btn:hover {
+  color: var(--text-primary);
+}
+
+.step-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.step-subtitle {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
+
+.phone-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.phone-input-group {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0,0,0,0.2);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.country-code {
+  padding: 16px;
+  background-color: rgba(255,255,255,0.05);
+  font-weight: 600;
+  color: var(--text-primary);
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+.phone-input-group input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 16px;
+  color: white;
+  font-size: 1.1rem;
+  outline: none;
+}
+
+.btn-primary-large {
+  width: 100%;
+  padding: 16px;
+  background-color: var(--accent-primary);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-primary-large:hover:not(:disabled) {
+  background-color: #00b05a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 210, 106, 0.3);
+}
+
+.btn-primary-large:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* OTP Step */
+.otp-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.otp-box {
+  width: 48px;
+  height: 56px;
+  background-color: rgba(0,0,0,0.2);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+.otp-box:focus {
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 2px rgba(0, 210, 106, 0.2);
+}
+
+.mt-6 { margin-top: 24px; }
+
+.resend-link {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.resend-link button {
+  background: transparent;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  font-size: 0.85rem;
+}
+
+.resend-link button:hover {
+  text-decoration: underline;
+}
+
+/* Loading Step */
+.login-step-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
